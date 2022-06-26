@@ -1,5 +1,7 @@
 import React, {useEffect} from 'react' 
 import './App.css'
+import {useStateContext} from './contexts/ContextProvider'
+
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import {FiSettings} from 'react-icons/fi'
 import {TooltipComponent} from '@syncfusion/ej2-react-popups'
@@ -26,7 +28,8 @@ import {Pyramid} from './pages/charts/Pyramid'
 import {Stacked} from './pages/charts/Stacked'
 
 function App() {
-  const activeMenu = true
+  const {activeMenu} = useStateContext()
+
   return (
     <div>
       <Router>
