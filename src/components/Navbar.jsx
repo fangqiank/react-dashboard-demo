@@ -68,7 +68,7 @@ export const Navbar = () => {
 				>
 					<div 
 						className='flex item-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg'
-						onclick={() => handleClick('userProfile')}
+						onClick={() => handleClick('userProfile')}
 					>
 						<img 
 							className='rounded-full w-8 h-8'
