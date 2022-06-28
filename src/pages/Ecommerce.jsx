@@ -103,13 +103,13 @@ export const Ecommerce = () => {
 
               <div className="mt-5">
                 <SparkLine 
-                  currentColor='blue'
+                  currentColor={currentColor}
                   id="line-sparkLine" 
                   type="Line" 
                   height="80px" 
                   width="250px" 
                   data={SparklineAreaData} 
-                  color='blue' 
+                  color={currentColor}
                 />
               </div>
               <div className="mt-10">
@@ -123,7 +123,7 @@ export const Ecommerce = () => {
             </div>
             <div>
               <Stacked 
-                // currentMode={currentMode} 
+                currentMode={currentMode} 
                 width="320px" 
                 height="360px" 
               />
