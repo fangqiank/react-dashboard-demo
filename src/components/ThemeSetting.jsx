@@ -49,7 +49,7 @@ export const ThemeSetting = () => {
 							onChange={setMode}
 							checked={currentMode === 'Light'}
 						/>
-						<label htmlFor='dark' className='ml-2 text-md cursor=pointer'>Light</label>
+						<label htmlFor='dark' className='ml-2 text-md cursor=pointer'>Dark</label>
 					</div>
 				</div>
 
