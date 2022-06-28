@@ -29,7 +29,16 @@ import {Pyramid} from './pages/charts/Pyramid'
 import {Stacked} from './pages/charts/Stacked'
 
 function App() {
-  const {activeMenu, themeSettings, setThemeSettings, currentColor, currentMode} = useStateContext()
+  const {activeMenu, themeSettings, setThemeSettings, currentColor, currentMode, setCurrentColor, setCurrentMode} = useStateContext()
+
+  useEffect(() => {
+    const currentThemeColor = localStorage.getItem('ColorMode')
+    const currentThemeMode = localStorage.getItem('ThemeMode')
+    if(currentThemeColor && currentThemeMode) {
+      setCurrentColor(currentThemeColor)
+      setCurrentMode(currentThemeMode)
+    }
+  },[])
 
   return (
     <div  className={currentMode === 'Dark' ? 'dark' : ''}>
