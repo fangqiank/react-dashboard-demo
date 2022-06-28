@@ -70,7 +70,7 @@ function App() {
           </div>
 
           <div>
-            {themeSettings && <ThemeSetting />}
+            <ThemeSetting />
             
             <Routes>
               {/* dashboard  */}
