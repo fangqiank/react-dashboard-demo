@@ -33,7 +33,7 @@ export const Employees = () => {
 					))}
 				</ColumnsDirective>
 
-				<Inject services={[Search, Page]}/>
+				<Inject services={[Search, Page, Toolbar]}/>
 			</GridComponent>		
 		</div>
 	)
