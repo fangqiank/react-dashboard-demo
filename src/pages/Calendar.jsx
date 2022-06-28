@@ -8,9 +8,9 @@ import {Header} from '../components/Header'
 export const Calendar = () => {
 	const [scheduleObj, setScheduleObj] = React.useState(null)
 
-	const PropertyPane = props => (
+	const PropertyPane = ({children}) => (
 		<div className='mt-5'>
-			{props.children}
+			{children}
 		</div>
 	)
 
