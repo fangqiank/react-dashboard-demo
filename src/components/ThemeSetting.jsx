@@ -47,7 +47,7 @@ export const ThemeSetting = () => {
 							value='Dark'
 							className='cursor-pointer'
 							onChange={setMode}
-							checked={currentMode === 'Light'}
+							checked={currentMode === 'Dark'}
 						/>
 						<label htmlFor='dark' className='ml-2 text-md cursor=pointer'>Dark</label>
 					</div>
