@@ -8,6 +8,7 @@ import {TooltipComponent} from '@syncfusion/ej2-react-popups'
 
 import {Sidebar} from './components/Sidebar'
 import {Navbar} from './components/Navbar'
+import {ThemeSetting} from './components/ThemeSetting'
 
 import {Ecommerce} from  './pages/Ecommerce'
 import {Orders} from './pages/Orders'
@@ -28,7 +29,7 @@ import {Pyramid} from './pages/charts/Pyramid'
 import {Stacked} from './pages/charts/Stacked'
 
 function App() {
-  const {activeMenu} = useStateContext()
+  const {activeMenu, themeSettings} = useStateContext()
 
   return (
     <div>
@@ -60,13 +61,17 @@ function App() {
               <Sidebar />
             </div>
           )}
-          <div className={activeMenu ? 'dark:bg-main-dark-bg bg-main-bg min-h-screen md:ml-72 w-full' : 'bg-main-bg dark:bg-main-dark-bg  w-full min-h-screen flex-2'}>
+          <div className={activeMenu ? 
+            'dark:bg-main-dark-bg bg-main-bg min-h-screen md:ml-72 w-full' : 'bg-main-bg dark:bg-main-dark-bg  w-full min-h-screen flex-2'}
+          >
             <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full">
               <Navbar />
             </div>
           </div>
 
           <div>
+            {themeSettings && <ThemeSetting />}
+            
             <Routes>
               {/* dashboard  */}
               <Route path="/" element={<Ecommerce />} />
