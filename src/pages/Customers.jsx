@@ -19,7 +19,7 @@ export const Customers = () => {
 				dataSource={customersData}
 				enableHover={false}
 				allowPaging
-				pageSettings={{pageSize: 5}}
+				pageSettings={{pageSize: 10}}
 				selectionSettings={selectionSettings}
 				toolbar={toolbarOptions}
 				editSettings={editing}

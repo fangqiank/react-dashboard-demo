@@ -20,7 +20,7 @@ export const Employees = () => {
 				width='auto'
 				allowPaging
 				allowSorting
-				pageSettings={{pageSize: 5}}
+				pageSettings={{pageSize: 10}}
 				editSettings={editing}
 				toolbar={toolbarOptions}
 			>
