@@ -39,7 +39,7 @@ export const Chat = () => {
 						<div className="relative">
 							<img
 								className='rounded-full w-10 h-10'
-								src={item.img}
+								src={item.image}
 								alt={item.message}
 							/>
 							<span
