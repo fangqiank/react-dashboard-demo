@@ -4,11 +4,10 @@ import {financialChartData, FinancialPrimaryXAxis, FinancialPrimaryYAxis} from '
 import { useStateContext } from '../../contexts/ContextProvider'
 import {ChartsHeader} from '../../components/ChartsHeader'
 
-const date1 = new Date('2017, 1, 1')
+const baseDate = new Date('2017, 1, 1')
 
-function filterValue(value) {
-  if (value.x >= date1) {
-    // eslint-disable-next-line no-sequences
+const filterValue = value => {
+  if (value.x >= baseDate) {
     return value.x, value.high, value.low;
   }
 }
