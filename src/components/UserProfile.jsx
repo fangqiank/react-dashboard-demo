@@ -43,7 +43,7 @@ export const UserProfile = () => {
 					>
 						<button
 							type='button'
-							style={{color:item.iconColor, background:item,iconBg}}
+							style={{color:item.iconColor, background:item.iconBg}}
 							className='text-xl rounded-lg p-3 hover:bg-light-gray'
 						>
 							{item.icon}
