@@ -4,12 +4,11 @@ import {financialChartData, FinancialPrimaryXAxis, FinancialPrimaryYAxis} from '
 import { useStateContext } from '../../contexts/ContextProvider'
 import {ChartsHeader} from '../../components/ChartsHeader'
 
-const baseDate = new Date('2017, 1, 1')
-
-const filterValue = (value) => {
-	if(value.x >= baseDate) {
-		return value.x, value.high, value.low
-	}
+function filterValue(value) {
+  if (value.x >= date1) {
+    // eslint-disable-next-line no-sequences
+    return value.x, value.high, value.low;
+  }
 }
 
 const returnValue = financialChartData.filter(filterValue)
@@ -41,7 +40,7 @@ export const Financial = () => {
 							name='pornhub Inc'
 							type='Hilo'
 							low='low'
-							high=''
+							high='high'
 						/>
 					</SeriesCollectionDirective>
 
