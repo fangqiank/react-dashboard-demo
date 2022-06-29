@@ -2,7 +2,7 @@ import React from 'react'
 
 import {pieChartData} from '../../data/dummy'
 import {ChartsHeader} from '../../components/charts/ChartsHeader'
-import {Pie} from '../../components/charts/Pie'
+import {Pie as PieComponent} from '../../components/charts/Pie'
 
 export const Pie = () => {
 	return (
@@ -12,7 +12,7 @@ export const Pie = () => {
 				title='Project Cost BreakDown' 
 			/>
 			<div className="w-full">
-				<Pie
+				<PieComponent
 					id='chart-pie'
 					data={pieChartData}
 					legendVisibility
