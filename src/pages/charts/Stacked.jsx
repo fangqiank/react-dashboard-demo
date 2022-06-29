@@ -1,6 +1,6 @@
 import React from 'react'
 import {ChartsHeader} from '../../components/ChartsHeader'
-import {Stacked} from '../../components/charts/Stacked'
+import {Stacked as StackedComponent} from '../../components/charts/Stacked'
 
 export const Stacked = () => {
 	return (
@@ -10,7 +10,7 @@ export const Stacked = () => {
 				title='Revenue Breakdown' 
 			/>
 			<div className="w-full">
-				<Stacked />
+				<StackedComponent />
 			</div>
 		</div>
 	)
