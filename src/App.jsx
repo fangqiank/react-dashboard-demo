@@ -9,6 +9,7 @@ import {TooltipComponent} from '@syncfusion/ej2-react-popups'
 import {Sidebar} from './components/Sidebar'
 import {Navbar} from './components/Navbar'
 import {ThemeSetting} from './components/ThemeSetting'
+import { Footer } from './components/Footer'
 
 import {Ecommerce} from  './pages/Ecommerce'
 import {Orders} from './pages/Orders'
@@ -109,9 +110,10 @@ function App() {
               <Route path="/stacked" element={<Stacked />} />
             </Routes>
           </div>
-        </div>
-      </Router>
-    </div>
+        <Footer/>
+      </div>
+    </Router>
+  </div>
   )
 }
 
